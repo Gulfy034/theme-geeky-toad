@@ -1,16 +1,36 @@
-# Geek
+# Geeky-Toad
 
-这是一个博客园皮肤，它来自 [Cnblog Labs](https://github.com/cnbloglabs)，欢迎使用！
+现代化大改的geek主题！！！
 
-## 浏览器支持
+这是一个博客园皮肤，来自 [Cnblog Labs](https://github.com/cnbloglabs/theme-geek) 的个人修改版本，如果喜欢的话你也可以用！
 
-支持所有现代浏览器，Internet Explorer 11 +。
+## 修改dependies和语法栈（画饼）
 
-## 在博客园安装
+1. 支持所有现代浏览器，**除了** Internet Explorer 11+
+2. 将全部js转为ts、严格类型检查等等，避免一些bug的产生
+3. 重写了符合ES6+TS标准的acnb的一些库，开源至仓库[acnb-*](https://github.com/Gulfy034?tab=repositories&q=acnb-&type=&language=&sort=)
+4. 移除了jQuery的ts定义和全部语法
 
-请 [点击这里](https://www.yuque.com/awescnb) 查看文档进行安装。
+## 关于loader.min.js
 
-## 特性
+### 从原作者获取源码
+
+1. 在 原作者[guanzan](https://github.com/cnbloglabs/loader) 中clone源码，然后`npm build`
+2. 编译好的输出的loader.min.js上传到你的cnblog的自定义javascript中
+
+### 从我的仓库获取源码
+
+https://github.com/Gulfy034/acnb-loader.git
+
+## 直接安装
+
+> [!IMPORTANT]
+> 原版的 [点击这里](https://www.yuque.com/awescnb) 查看文档进行安装的方式在这里徐娅一些修改。
+
+1. 需要在 页脚HTML代码 的 script标签 的 src属性 填写你的loader.min.js的地址；
+2. 其余按照原版的安装流程继续。
+
+## 修改后特性
 
 - 💻 兼容桌面、平板、手机
 - 🎨 支持自定义主题色
@@ -28,12 +48,12 @@
 - 🔮 自定义网站图标、标题
 - ⛳ 支持文章目录自动生成（博客园所有编辑器）
 - 🎏 支持自定义背景色、背景图片，支持可重复的背景图片
-- ✨ 支持炫酷可配置的点击特效
-- 🔊 支持音乐播放器
+- ~~✨ 支持炫酷可配置的点击特效（已经移除）~~
+- ~~🔊 支持音乐播放器（已经移除）~~
 - 🔨 支持工具栏，点赞、评论、评论、收藏...
 - 🔔 支持自定义通知
-- 🧚‍♂️ 支持自定义 live2d 模型
-- ...
+- ~~🧚‍♂️ 支持自定义 live2d 模型（已经移除）~~
+- ！完善并且修改部分动画
 
 ## 贡献
 
