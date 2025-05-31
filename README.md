@@ -18,17 +18,39 @@
 1. 在 原作者[guanzan](https://github.com/cnbloglabs/loader) 中clone源码，然后`npm build`
 2. 编译好的输出的loader.min.js上传到你的cnblog的自定义javascript中
 
-### 从我的仓库获取源码
+### 从本仓库获取源码
 
 https://github.com/Gulfy034/acnb-loader.git
 
-## 直接安装
+## 安装
+
+有两种方式
+
+### 直接安装（无需自行编译主题js）
 
 > [!IMPORTANT]
 > 原版的 [点击这里](https://www.yuque.com/awescnb) 查看文档进行安装的方式在这里徐娅一些修改。
 
 1. 需要在 页脚HTML代码 的 script标签 的 src属性 填写你的loader.min.js的地址；
 2. 其余按照原版的安装流程继续。
+
+### 自行编译全部内容为一个js文件后加载
+
+1. `npm run build` 后在dist文件夹里选择你编译好的js文件；
+2. 把上一个步骤所述的js文件上传到你的网站或是，随后在cnblog的自定义html页首用`script`标签的`src`属性指向你的js文件地址。例如：
+
+   ```html
+   <script src="https://yourwebsite.com/yourtheme.js"></script>
+   <script>
+    const opts = {
+        theme: {
+            name: "https://guangzan.gitee.io/awescnb/reacg.js",
+        },
+        // 其他配置自行选择
+    };
+    $.awesCnb(opts);// 在博客园内的javascript中加载jquery
+    </script>
+   ```
 
 ## 修改后特性
 
